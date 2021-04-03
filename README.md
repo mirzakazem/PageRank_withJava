@@ -23,6 +23,7 @@ inside a while loop we will keep do the following, until r1 stop evolving (conve
 - get the sum of deadends values from r0 then normalize it by n.
 - compute the first part of the r1 formula, for each value of the sparse matrix: r1 = r1 + (r0 * value)
 - compute he seconf part of the r1 formula, for each value of the r1 : r1= ((r1 + sum of deanends) * Beta) + ((1-Beta)/n))
+- switch the pointer of r1 and r0 ( in each iteration r0 in the source and r1 is the destination)
 
 ### final step, print result:
 
@@ -34,13 +35,13 @@ inside a while loop we will keep do the following, until r1 stop evolving (conve
    - Number Nodes with positive degree ( degree > 0 )
    - Number of Nodes without any out links ( degree = 0 ) 
    - Number of Iteration the r1 needed to converge
-   - cumulative sum of all page ranks
-   - name of file contains the sparse matrix values that program used ( row, column , value)
-   - name of the file contain the rank of each node
+   - Cumulative sum of all page ranks
+   - Name of file contains the sparse matrix values that program used ( row, column , value)
+   - Name of the file contain the rank of each node
 
 2- in your current folder, you will have two files:
-    - "sparseMatrix.csv" which contains the sparse matrix values
-    - "nodesAndRankValues.csv"  which contains the nodes and their final page rank value (you can easily filter the values in descending order to know the top nodes)
+ - "sparseMatrix.csv" which contains the sparse matrix values
+ - "nodesAndRankValues.csv"  which contains the nodes and their final page rank value (you can easily filter the values in descending order to know the top nodes)
   
 # Note:
 - you can modify the value of beta by changing the value of the double variable named : "dampingFactor" (line 17)
