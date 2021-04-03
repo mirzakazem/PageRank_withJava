@@ -44,4 +44,4 @@ inside a while loop we will keep do the following, until r1 stop evolving (conve
  - "nodesAndRankValues.csv"  which contains the nodes and their final page rank value (you can easily filter the values in descending order to know the top nodes)
   
 # Note:
-- you can modify the value of beta by changing the value of the double variable named : "dampingFactor" (line 17)
+- you can modify the value of beta by changing the value of a double variable named : "dampingFactor" (line 17)
