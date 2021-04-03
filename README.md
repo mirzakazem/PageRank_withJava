@@ -11,7 +11,7 @@
 ## How it works:
 
 ### first step, read and process data:
-- it reads from  "munmun_twitter_social.txt" the number edges, nodes and linkes (vertices) from each entry in the file
+- it reads from  "munmun_twitter_social.txt" the number edges, nodes and linkes from each entry in the file
 - create a sparse matrix (row, column, value)
 - create an array for the deadends nodes. (nodes with out degree =0)
 - create r0 array and initialize all its items value to 1/n (n= number of nodes)
